@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Complete transparency on how DigitalTools handles your data: client-side processing details, serverless file manipulation, and translation API disclosure.',
   alternates: {
-    canonical: 'https://digitaltools.dev/privacy',
+    canonical: 'https://digitaltoools.vercel.app/privacy',
   },
 };
 
@@ -24,7 +24,7 @@ export default function PrivacyPage() {
           Privacy Policy &amp; Architecture Standards
         </h1>
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
-          At DigitalTools (https://digitaltools.dev), we hold user privacy as an absolute architectural
+          At DigitalTools (https://digitaltoools.vercel.app), we hold user privacy as an absolute architectural
           principle. This policy provides complete, honest technical details regarding how data is
           processed across our 26 utilities.
         </p>
