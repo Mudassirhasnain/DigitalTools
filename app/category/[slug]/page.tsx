@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   if (!category) return {};
 
   const pageUrl = `https://digitaltoools.vercel.app/category/${category.slug}`;
-  const title = `${category.name} Tools: Free Online Utilities | DigitalTools`;
+  const title = `${category.name} Tools: Free Online Utilities | DigitalToools`;
   const description = `Explore free, privacy-first ${category.name.toLowerCase()} tools. ${category.description}`;
 
   return {
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: pageUrl,
       title,
       description,
-      siteName: 'DigitalTools',
+      siteName: 'DigitalToools',
       images: [
         {
           url: 'https://digitaltoools.vercel.app/og-default.png',
