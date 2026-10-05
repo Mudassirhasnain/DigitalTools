@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       url: pageUrl,
       title: tool.seoTitle,
       description: tool.metaDescription,
-      siteName: 'DigitalTools',
+      siteName: 'DigitalToools',
       images: [
         {
           url: 'https://digitaltoools.vercel.app/og-default.png',
