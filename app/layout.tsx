@@ -25,10 +25,10 @@ export const metadata: Metadata = {
   description:
     'Free online tools for developers, creators, and freelancers. Resume builder, PDF generator, EXIF scrubber, EMI calculator, and code formatters.',
   keywords: [
-    'developer tools',
+    'cv maker online',
     'free online tools',
-    'resume builder ATS',
-    'loan emi calculator PKR',
+    'resume builder online',
+    'loan emi calculator',
     'photo exif remover',
     'qr code generator',
     'markdown previewer',
