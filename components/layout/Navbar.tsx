@@ -22,7 +22,7 @@ export const Navbar: React.FC = () => {
             <Wrench className="w-4 h-4" />
           </div>
           <span>
-            Digital<span className="text-blue-600 dark:text-blue-400">Tools</span>
+            Digital<span className="text-blue-600 dark:text-blue-400">Toools</span>
           </span>
         </Link>
 
@@ -150,7 +150,7 @@ export const Navbar: React.FC = () => {
                 onClick={() => setMobileMenuOpen(false)}
                 className="py-1 text-slate-700 dark:text-slate-300"
               >
-                About DigitalTools
+                About DigitalToools
               </Link>
               <Link
                 href="/faq"
