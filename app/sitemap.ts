@@ -3,7 +3,7 @@ import { TOOLS } from '@/lib/tools';
 import { CATEGORIES } from '@/lib/categories';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://digitaltools.dev';
+  const baseUrl = 'https://digitaltoools.vercel.app';
   const currentDate = new Date();
 
   // Core static pages
