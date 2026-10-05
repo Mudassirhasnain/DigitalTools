@@ -19,7 +19,7 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://digitaltoools.vercel.app'),
   title: {
-    default: 'DigitalTools: 26 Free, Fast & Private Online Utilities',
+    default: 'DigitalToools: 26 Free, Fast & Private Online Utilities',
     template: '%s',
   },
   description:
@@ -35,9 +35,9 @@ export const metadata: Metadata = {
     'unit converter',
     'base64 image converter',
   ],
-  authors: [{ name: 'DigitalTools Engineering Team' }],
-  creator: 'DigitalTools',
-  publisher: 'DigitalTools',
+  authors: [{ name: 'DigitalToools Engineering Team' }],
+  creator: 'DigitalToools',
+  publisher: 'DigitalToools',
   robots: {
     index: true,
     follow: true,
@@ -53,8 +53,8 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://digitaltoools.vercel.app',
-    siteName: 'DigitalTools',
-    title: 'DigitalTools: 26 Free, Fast & Private Online Utilities',
+    siteName: 'DigitalToools',
+    title: 'DigitalToools: 26 Free, Fast & Private Online Utilities',
     description:
       'Free, privacy-focused online tools for developers, creators, and professionals. 100% client-side processing wherever possible.',
     images: [
@@ -62,13 +62,13 @@ export const metadata: Metadata = {
         url: 'https://digitaltoools.vercel.app/og-default.png',
         width: 1200,
         height: 630,
-        alt: 'DigitalTools - 26 Free, Fast & Private Online Utilities',
+        alt: 'DigitalToools - 26 Free, Fast & Private Online Utilities',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DigitalTools: 26 Free, Fast & Private Online Utilities',
+    title: 'DigitalToools: 26 Free, Fast & Private Online Utilities',
     description:
       'Free, privacy-first online tools for developers and creators. No tracking, zero paywalls, instant browser compute.',
     images: ['https://digitaltoools.vercel.app/og-default.png'],
