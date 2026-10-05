@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   description:
     'Learn why DigitalTools was built: fast, transparent, and client-first digital utilities without ads, paywalls, or privacy-invasive tracking.',
   alternates: {
-    canonical: 'https://digitaltools.dev/about',
+    canonical: 'https://digitaltoools.vercel.app/about',
   },
 };
 
@@ -19,7 +19,7 @@ export default function AboutPage() {
     '@type': 'AboutPage',
     name: 'About DigitalTools',
     description: 'Learn about DigitalTools mission, client-first architecture, and transparency.',
-    url: 'https://digitaltools.dev/about',
+    url: 'https://digitaltoools.vercel.app/about',
   };
 
   return (
@@ -67,8 +67,8 @@ export default function AboutPage() {
             Radical Transparency
           </h2>
           <p className="text-xs sm:text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
-            We clearly label how every tool works. When a feature requires external routing—such as the Universal
-            Translator calling an open translation API—we state it explicitly on the page rather than masking it.
+            We clearly label how every tool works. When a feature requires external routing, such as the Universal
+            Translator calling an open translation API, we state it explicitly on the page rather than masking it.
           </p>
         </Card>
 
@@ -105,8 +105,8 @@ export default function AboutPage() {
           Why Serverless Client Utilities Matter
         </h2>
         <p>
-          Every day, millions of individuals upload sensitive documents—such as passport scans, employment contracts,
-          and proprietary API payloads—to obscure online conversion websites. Most users are unaware that many of these
+          Every day, millions of individuals upload sensitive documents, such as passport scans, employment contracts,
+          and proprietary API payloads, to obscure online conversion websites. Most users are unaware that many of these
           sites retain uploaded files indefinitely, index their contents, or monetize user data.
         </p>
         <p>
