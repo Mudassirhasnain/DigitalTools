@@ -4,9 +4,9 @@ import { Card } from '@/components/ui/Card';
 import { Mail, MessageSquare, ShieldCheck, Github } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact DigitalTools: Engineering Feedback & Support',
+  title: 'Contact DigitalToools: Engineering Feedback & Support',
   description:
-    'Get in touch with the DigitalTools development team. Submit bug reports, suggest new client-side utilities, or request technical support.',
+    'Get in touch with the DigitalToools development team. Submit bug reports, suggest new client-side utilities, or request technical support.',
   alternates: {
     canonical: 'https://digitaltoools.vercel.app/contact',
   },
@@ -16,8 +16,8 @@ export default function ContactPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ContactPage',
-    name: 'Contact DigitalTools',
-    description: 'Get in touch with the DigitalTools engineering team.',
+    name: 'Contact DigitalToools',
+    description: 'Get in touch with the DigitalToools engineering team.',
     url: 'https://digitaltoools.vercel.app/contact',
   };
 
@@ -37,7 +37,7 @@ export default function ContactPage() {
         </h1>
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           We welcome bug reports, algorithmic feature suggestions, and inquiries regarding privacy
-          implementation standards across DigitalTools.
+          implementation standards across DigitalToools.
         </p>
       </header>
 
