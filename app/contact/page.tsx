@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Get in touch with the DigitalTools development team. Submit bug reports, suggest new client-side utilities, or request technical support.',
   alternates: {
-    canonical: 'https://digitaltools.dev/contact',
+    canonical: 'https://digitaltoools.vercel.app/contact',
   },
 };
 
@@ -18,7 +18,7 @@ export default function ContactPage() {
     '@type': 'ContactPage',
     name: 'Contact DigitalTools',
     description: 'Get in touch with the DigitalTools engineering team.',
-    url: 'https://digitaltools.dev/contact',
+    url: 'https://digitaltoools.vercel.app/contact',
   };
 
   return (
@@ -51,10 +51,10 @@ export default function ContactPage() {
             For security audits, press inquiries, or general feedback.
           </p>
           <a
-            href="mailto:contact@digitaltools.dev"
+            href="mailto:your-email@example.com"
             className="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline block pt-1"
           >
-            contact@digitaltools.dev
+            your-email@example.com
           </a>
         </Card>
 
@@ -80,10 +80,10 @@ export default function ContactPage() {
             Responsible vulnerability disclosures receive priority response within 24 hours.
           </p>
           <a
-            href="mailto:security@digitaltools.dev"
+            href="mailto:your-email@example.com"
             className="text-xs font-semibold text-purple-600 dark:text-purple-400 hover:underline block pt-1"
           >
-            security@digitaltools.dev
+            your-email@example.com
           </a>
         </Card>
       </div>
@@ -94,7 +94,7 @@ export default function ContactPage() {
           Send a Direct Message
         </h2>
         <form
-          action="mailto:contact@digitaltools.dev"
+          action="mailto:your-email@example.com"
           method="GET"
           className="space-y-4"
         >
