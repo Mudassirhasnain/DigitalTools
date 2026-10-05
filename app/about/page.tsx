@@ -5,9 +5,9 @@ import { Card } from '@/components/ui/Card';
 import { ShieldCheck, Cpu, Code2, HeartHandshake, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About DigitalTools: Modern, Private Web Utilities',
+  title: 'About DigitalToools: Modern, Private Web Utilities',
   description:
-    'Learn why DigitalTools was built: fast, transparent, and client-first digital utilities without ads, paywalls, or privacy-invasive tracking.',
+    'Learn why DigitalToools was built: fast, transparent, and client-first digital utilities without ads, paywalls, or privacy-invasive tracking.',
   alternates: {
     canonical: 'https://digitaltoools.vercel.app/about',
   },
@@ -17,8 +17,8 @@ export default function AboutPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'AboutPage',
-    name: 'About DigitalTools',
-    description: 'Learn about DigitalTools mission, client-first architecture, and transparency.',
+    name: 'About DigitalToools',
+    description: 'Learn about DigitalToools mission, client-first architecture, and transparency.',
     url: 'https://digitaltoools.vercel.app/about',
   };
 
@@ -39,7 +39,7 @@ export default function AboutPage() {
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           The modern web is inundated with utility sites that demand user logins, hide simple PDF downloads
           behind recurring subscriptions, and quietly upload private photos and contracts to remote servers.
-          DigitalTools was conceived as a principled alternative.
+          DigitalToools was conceived as a principled alternative.
         </p>
       </header>
 
@@ -110,12 +110,12 @@ export default function AboutPage() {
           sites retain uploaded files indefinitely, index their contents, or monetize user data.
         </p>
         <p>
-          DigitalTools reclaims user privacy by leveraging modern browser capabilities. Modern desktop and mobile
+          DigitalToools reclaims user privacy by leveraging modern browser capabilities. Modern desktop and mobile
           browsers possess immense compute power: they can compile vector PDFs, re-encode multi-megabyte images, and
           execute cryptographic hashing in milliseconds without sending a single byte across a network socket.
         </p>
         <p>
-          We are committed to maintaining DigitalTools as a free, open, and dependable resource for the global
+          We are committed to maintaining DigitalToools as a free, open, and dependable resource for the global
           software and creator community.
         </p>
       </section>
