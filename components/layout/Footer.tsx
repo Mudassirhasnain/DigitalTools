@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
                   Honest Processing Disclosures
                 </h4>
                 <p className="mt-1 leading-relaxed text-slate-500 dark:text-slate-400">
-                  Every tool explicitly states its compute model—whether 100% offline client-side execution or external API translation routing.
+                  Every tool explicitly states its compute model, whether 100% offline client-side execution or external API translation routing.
                 </p>
               </div>
             </div>
@@ -64,13 +64,13 @@ export const Footer: React.FC = () => {
               href="/"
               className="text-base font-bold text-slate-900 dark:text-white inline-block focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm"
             >
-              Digital<span className="text-blue-600 dark:text-blue-400">Tools</span>.dev
+              Digital<span className="text-blue-600 dark:text-blue-400">Toools</span>
             </Link>
             <p className="mt-3 text-xs leading-relaxed text-slate-500 dark:text-slate-400 max-w-sm">
               Free, modern, privacy-respecting online utilities engineered for software developers, designers, freelancers, and students.
             </p>
             <p className="mt-4 text-[11px] text-slate-400 dark:text-slate-500">
-              © {new Date().getFullYear()} DigitalTools. All rights reserved.
+              © {new Date().getFullYear()} DigitalToools. All rights reserved.
             </p>
           </div>
 
@@ -103,7 +103,7 @@ export const Footer: React.FC = () => {
                   href="/about"
                   className="text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 rounded-sm"
                 >
-                  About DigitalTools
+                  About DigitalToools
                 </Link>
               </li>
               <li>
