@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const category = getCategoryBySlug(slug);
   if (!category) return {};
 
-  const pageUrl = `https://digitaltools.dev/category/${category.slug}`;
+  const pageUrl = `https://digitaltoools.vercel.app/category/${category.slug}`;
   const title = `${category.name} Tools: Free Online Utilities | DigitalTools`;
   const description = `Explore free, privacy-first ${category.name.toLowerCase()} tools. ${category.description}`;
 
@@ -40,7 +40,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       siteName: 'DigitalTools',
       images: [
         {
-          url: 'https://digitaltools.dev/og-default.png',
+          url: 'https://digitaltoools.vercel.app/og-default.png',
           width: 1200,
           height: 630,
           alt: category.name,
@@ -63,7 +63,7 @@ export default async function CategoryPage({ params }: PageProps) {
     '@type': 'CollectionPage',
     name: `${category.name} Tools`,
     description: category.description,
-    url: `https://digitaltools.dev/category/${category.slug}`,
+    url: `https://digitaltoools.vercel.app/category/${category.slug}`,
     breadcrumb: {
       '@type': 'BreadcrumbList',
       itemListElement: [
@@ -71,13 +71,13 @@ export default async function CategoryPage({ params }: PageProps) {
           '@type': 'ListItem',
           position: 1,
           name: 'Home',
-          item: 'https://digitaltools.dev',
+          item: 'https://digitaltoools.vercel.app',
         },
         {
           '@type': 'ListItem',
           position: 2,
           name: category.name,
-          item: `https://digitaltools.dev/category/${category.slug}`,
+          item: `https://digitaltoools.vercel.app/category/${category.slug}`,
         },
       ],
     },
