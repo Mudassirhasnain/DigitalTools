@@ -17,7 +17,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://digitaltools.dev'),
+  metadataBase: new URL('https://digitaltoools.vercel.app'),
   title: {
     default: 'DigitalTools: 26 Free, Fast & Private Online Utilities',
     template: '%s',
@@ -52,14 +52,14 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://digitaltools.dev',
+    url: 'https://digitaltoools.vercel.app',
     siteName: 'DigitalTools',
     title: 'DigitalTools: 26 Free, Fast & Private Online Utilities',
     description:
       'Free, privacy-focused online tools for developers, creators, and professionals. 100% client-side processing wherever possible.',
     images: [
       {
-        url: 'https://digitaltools.dev/og-default.png',
+        url: 'https://digitaltoools.vercel.app/og-default.png',
         width: 1200,
         height: 630,
         alt: 'DigitalTools - 26 Free, Fast & Private Online Utilities',
@@ -71,8 +71,7 @@ export const metadata: Metadata = {
     title: 'DigitalTools: 26 Free, Fast & Private Online Utilities',
     description:
       'Free, privacy-first online tools for developers and creators. No tracking, zero paywalls, instant browser compute.',
-    images: ['https://digitaltools.dev/og-default.png'],
-    creator: '@digitaltoolsdev',
+    images: ['https://digitaltoools.vercel.app/og-default.png'],
   },
   icons: {
     icon: '/favicon.ico',
