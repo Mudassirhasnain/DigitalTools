@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description:
     'Answers to common questions about DigitalTools: privacy standards, client-side execution, pricing, offline support, and file format capabilities.',
   alternates: {
-    canonical: 'https://digitaltools.dev/faq',
+    canonical: 'https://digitaltoools.vercel.app/faq',
   },
 };
 
@@ -21,7 +21,7 @@ const GLOBAL_FAQS = [
   {
     question: 'Are my private files and images uploaded to your servers?',
     answer:
-      'No. The vast majority of our tools—including the Image Format Converter, Photo EXIF Remover, Resume Builder, and Cryptographic Hash Generator—process everything client-side inside your browser runtime memory. Your files never touch a remote server.',
+      'No. The vast majority of our tools, including the Image Format Converter, Photo EXIF Remover, Resume Builder, and Cryptographic Hash Generator, process everything client-side inside your browser runtime memory. Your files never touch a remote server.',
   },
   {
     question: 'Which tools send data to an external server?',
@@ -46,7 +46,7 @@ const GLOBAL_FAQS = [
   {
     question: 'Are loan calculations and financial figures legally binding?',
     answer:
-      'No. All financial calculations—such as Loan EMI and Discount figures—are mathematical estimations intended solely for financial planning. Official terms must be verified with your lending institution.',
+      'No. All financial calculations, such as Loan EMI and Discount figures, are mathematical estimations intended solely for financial planning. Official terms must be verified with your lending institution.',
   },
 ];
 
