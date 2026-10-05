@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   description:
     'Explore 26 fast, private, and free online tools for developers, creators, and freelancers. Resume builder, PDF generator, EXIF scrubber, and EMI calculator.',
   alternates: {
-    canonical: 'https://digitaltools.dev',
+    canonical: 'https://digitaltoools.vercel.app',
   },
 };
 
@@ -78,23 +78,23 @@ export default function HomePage() {
     '@graph': [
       {
         '@type': 'WebSite',
-        '@id': 'https://digitaltools.dev/#website',
-        url: 'https://digitaltools.dev',
+        '@id': 'https://digitaltoools.vercel.app/#website',
+        url: 'https://digitaltoools.vercel.app',
         name: 'DigitalTools',
         description:
           'Free online tools for developers, creators, and freelancers with client-first privacy.',
         publisher: {
-          '@id': 'https://digitaltools.dev/#organization',
+          '@id': 'https://digitaltoools.vercel.app/#organization',
         },
       },
       {
         '@type': 'Organization',
-        '@id': 'https://digitaltools.dev/#organization',
+        '@id': 'https://digitaltoools.vercel.app/#organization',
         name: 'DigitalTools',
-        url: 'https://digitaltools.dev',
+        url: 'https://digitaltoools.vercel.app',
         logo: {
           '@type': 'ImageObject',
-          url: 'https://digitaltools.dev/logo.png',
+          url: 'https://digitaltoools.vercel.app/logo.png',
         },
       },
     ],
