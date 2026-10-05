@@ -4,9 +4,9 @@ import Link from 'next/link';
 import { Card } from '@/components/ui/Card';
 
 export const metadata: Metadata = {
-  title: 'Frequently Asked Questions | DigitalTools Support',
+  title: 'Frequently Asked Questions | DigitalToools Support',
   description:
-    'Answers to common questions about DigitalTools: privacy standards, client-side execution, pricing, offline support, and file format capabilities.',
+    'Answers to common questions about DigitalToools: privacy standards, client-side execution, pricing, offline support, and file format capabilities.',
   alternates: {
     canonical: 'https://digitaltoools.vercel.app/faq',
   },
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 const GLOBAL_FAQS = [
   {
-    question: 'Are DigitalTools web utilities completely free to use?',
+    question: 'Are DigitalToools web utilities completely free to use?',
     answer:
       'Yes. All 26 tools are completely free for personal, commercial, and educational use. There are no subscriptions, paywalls, or usage limits.',
   },
@@ -34,7 +34,7 @@ const GLOBAL_FAQS = [
       'No. All exported PDF files from our Document to PDF Maker, Resume Builder, and Invoice Generator are completely clean and unbranded.',
   },
   {
-    question: 'Can I use DigitalTools while offline?',
+    question: 'Can I use DigitalToools while offline?',
     answer:
       'Yes! Because client-side tools execute entirely with JavaScript in your local browser, once you load the webpage, tools like Unit Converter, Password Generator, and Text Manipulation Suite will function without an active internet connection.',
   },
