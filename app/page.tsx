@@ -35,7 +35,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'DigitalTools: 26 Free, Fast & Private Online Utilities',
+  title: 'DigitalToools: 26 Free, Fast & Private Online Utilities',
   description:
     'Explore 26 fast, private, and free online tools for developers, creators, and freelancers. Resume builder, PDF generator, EXIF scrubber, and EMI calculator.',
   alternates: {
@@ -80,7 +80,7 @@ export default function HomePage() {
         '@type': 'WebSite',
         '@id': 'https://digitaltoools.vercel.app/#website',
         url: 'https://digitaltoools.vercel.app',
-        name: 'DigitalTools',
+        name: 'DigitalToools',
         description:
           'Free online tools for developers, creators, and freelancers with client-first privacy.',
         publisher: {
@@ -90,7 +90,7 @@ export default function HomePage() {
       {
         '@type': 'Organization',
         '@id': 'https://digitaltoools.vercel.app/#organization',
-        name: 'DigitalTools',
+        name: 'DigitalToools',
         url: 'https://digitaltoools.vercel.app',
         logo: {
           '@type': 'ImageObject',
