@@ -1,3 +1,4 @@
+```json
 {
   "name": "react-example",
   "private": true,
@@ -14,6 +15,8 @@
     "@google/genai": "^2.4.0",
     "@tailwindcss/postcss": "^4.3.3",
     "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^22.14.0",
+    "@vercel/analytics": "^1.5.0",
     "@vitejs/plugin-react": "^6.1.1",
     "dotenv": "^17.2.3",
     "express": "^4.21.2",
@@ -41,3 +44,4 @@
     "typescript": "^7.0.2"
   }
 }
+```
