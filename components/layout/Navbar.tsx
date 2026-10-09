@@ -11,7 +11,7 @@ export const Navbar: React.FC = () => {
   const [categoryDropdownOpen, setCategoryDropdownOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-slate-200/80 bg-white/90 backdrop-blur-md dark:border-slate-800 dark:bg-slate-950/85">
+    <header className="sticky top-3 z-40 mx-auto mt-3 w-[calc(100%-1.5rem)] max-w-7xl rounded-2xl border border-slate-200/80 bg-white/85 shadow-lg shadow-slate-900/5 backdrop-blur-md dark:border-slate-800 dark:bg-slate-950/80 dark:shadow-black/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand */}
         <Link
@@ -118,14 +118,14 @@ export const Navbar: React.FC = () => {
 
       {/* Mobile Drawer */}
       {mobileMenuOpen && (
-        <div className="md:hidden border-b border-slate-200 bg-white px-4 pt-3 pb-6 dark:border-slate-800 dark:bg-slate-950">
+        <div className="md:hidden rounded-b-2xl border-t border-slate-200 bg-white px-4 pt-3 pb-6 dark:border-slate-800 dark:bg-slate-950">
           <div className="flex flex-col space-y-3 text-sm font-medium">
             <Link
               href="/"
               onClick={() => setMobileMenuOpen(false)}
               className="py-2 text-slate-700 dark:text-slate-200"
             >
-              All Tools (26)
+              All Tools (38)
             </Link>
             <div className="border-t border-slate-100 dark:border-slate-850 pt-2 pb-1">
               <span className="text-xs uppercase tracking-wider text-slate-400 font-semibold">

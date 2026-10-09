@@ -36,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: currentDate,
   }));
 
-  // Tool dynamic pages (26 tools)
+  // Tool dynamic pages (all tools from lib/tools.ts)
   const toolRoutes: MetadataRoute.Sitemap = TOOLS.map((tool) => ({
     url: `${baseUrl}/tools/${tool.slug}`,
     lastModified: currentDate,

@@ -18,7 +18,7 @@ interface DocSection {
 export const DocumentToPdfMaker: React.FC = () => {
   const [title, setTitle] = useState('Non-Disclosure and Confidentiality Agreement');
   const [subtitle, setSubtitle] = useState('Standard Mutual Proprietary Information Exchange');
-  const [author, setAuthor] = useState('DigitalTools Legal Department');
+  const [author, setAuthor] = useState('DigitalToools Legal Department');
   const [pageSize, setPageSize] = useState<'letter' | 'a4' | 'legal'>('letter');
   const [fontFamily, setFontFamily] = useState<'helvetica' | 'times' | 'courier'>('helvetica');
   const [marginSize, setMarginSize] = useState<number>(45);

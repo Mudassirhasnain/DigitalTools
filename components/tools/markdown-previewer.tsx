@@ -49,7 +49,7 @@ Production-grade utility toolkit built with Next.js App Router, TypeScript, and 
 
 \`\`\`bash
 # Clone repository
-git clone https://github.com/digitaltools/core.git
+git clone https://github.com/digitaltoools/core.git
 
 # Install dependencies
 npm install
@@ -79,7 +79,7 @@ npm run dev
     label: 'Software Release Changelog',
     content: `# Changelog
 
-All notable changes to the DigitalTools suite are documented in this file.
+All notable changes to the DigitalToools suite are documented in this file.
 
 ## [2.4.0] - 2026-10-05
 ### Added

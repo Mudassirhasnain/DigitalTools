@@ -30,14 +30,26 @@ import {
   Barcode,
   Key,
   Hash,
+  CalendarDays,
+  Dices,
+  Hourglass,
+  Star,
+  RectangleHorizontal,
+  ArrowRightLeft,
+  AlarmClock,
+  Type,
+  CalendarRange,
+  Activity,
+  Timer,
+  Disc3,
   ArrowRight,
   ShieldCheck,
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'DigitalToools: 26 Free, Fast & Private Online Utilities',
+  title: 'DigitalToools: 38 Free, Fast & Private Online Utilities',
   description:
-    'Explore 26 fast, private, and free online tools for developers, creators, and freelancers. Resume builder, PDF generator, EXIF scrubber, and EMI calculator.',
+    'Explore 38 fast, private, and free online tools for developers, creators, and freelancers. Resume builder, PDF generator, EXIF scrubber, and EMI calculator.',
   alternates: {
     canonical: 'https://digitaltoools.vercel.app',
   },
@@ -70,6 +82,18 @@ const TOOL_ICONS: Record<string, React.ReactNode> = {
   'barcode-generator': <Barcode className="w-5 h-5 text-sky-500" />,
   'secure-password-generator': <Key className="w-5 h-5 text-amber-500" />,
   'cryptographic-hash-generator': <Hash className="w-5 h-5 text-rose-500" />,
+  'how-many-weeks-into-the-year': <CalendarDays className="w-5 h-5 text-sky-500" />,
+  'random-number-generator': <Dices className="w-5 h-5 text-fuchsia-500" />,
+  'time-difference-converter': <Hourglass className="w-5 h-5 text-teal-500" />,
+  'zodiac-sign-calculator': <Star className="w-5 h-5 text-violet-500" />,
+  'vertical-to-horizontal-image-converter': <RectangleHorizontal className="w-5 h-5 text-pink-500" />,
+  'est-to-pst-converter': <ArrowRightLeft className="w-5 h-5 text-blue-500" />,
+  'analogue-clock': <AlarmClock className="w-5 h-5 text-rose-500" />,
+  'word-character-counter': <Type className="w-5 h-5 text-teal-500" />,
+  'days-between-dates-calculator': <CalendarRange className="w-5 h-5 text-indigo-500" />,
+  'bmi-calculator': <Activity className="w-5 h-5 text-emerald-500" />,
+  'online-timer-stopwatch': <Timer className="w-5 h-5 text-orange-500" />,
+  'wheel-spinner-name-picker': <Disc3 className="w-5 h-5 text-pink-500" />,
 };
 
 export default function HomePage() {
@@ -120,7 +144,7 @@ export default function HomePage() {
         </h1>
 
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 max-w-2xl mx-auto leading-relaxed">
-          Access 26 purpose-built web utilities designed for developers, creators, and professionals.
+          Access 38 purpose-built web utilities designed for developers, creators, and professionals.
           Every tool processes your sensitive files and calculations client-side in your browser
           with zero paywalls and zero tracking.
         </p>
@@ -131,7 +155,7 @@ export default function HomePage() {
         <ToolSearchGrid
           tools={TOOLS}
           categories={CATEGORIES}
-          searchPlaceholder="Search all 26 tools by name, keyword, or acronym (e.g., pdf, emi, exif, qr)..."
+          searchPlaceholder="Search all 38 tools by name, keyword, or acronym (e.g., pdf, emi, exif, qr)..."
         />
       </section>
 
@@ -142,7 +166,7 @@ export default function HomePage() {
             Explore Utilities by Category
           </h2>
           <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">
-            Browse our complete collection of 26 browser-based web tools organized into 6 core operational domains.
+            Browse our complete collection of 38 browser-based web tools organized into {CATEGORIES.length} core operational domains.
           </p>
         </div>
 

@@ -16,7 +16,7 @@ const GLOBAL_FAQS = [
   {
     question: 'Are DigitalToools web utilities completely free to use?',
     answer:
-      'Yes. All 26 tools are completely free for personal, commercial, and educational use. There are no subscriptions, paywalls, or usage limits.',
+      'Yes. All 38 tools are completely free for personal, commercial, and educational use. There are no subscriptions, paywalls, or usage limits.',
   },
   {
     question: 'Are my private files and images uploaded to your servers?',

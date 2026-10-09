@@ -26,7 +26,7 @@ export default function PrivacyPage() {
         <p className="text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           At DigitalToools (https://digitaltoools.vercel.app), we hold user privacy as an absolute architectural
           principle. This policy provides complete, honest technical details regarding how data is
-          processed across our 26 utilities.
+          processed across our 38 utilities.
         </p>
       </header>
 

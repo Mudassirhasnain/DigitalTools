@@ -25,6 +25,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: tool.seoTitle,
     description: tool.metaDescription,
+    keywords: tool.keywords,
     alternates: {
       canonical: pageUrl,
     },
@@ -70,6 +71,7 @@ export default async function ToolPage({ params }: PageProps) {
         name: tool.name,
         url: `https://digitaltoools.vercel.app/tools/${tool.slug}`,
         description: tool.metaDescription,
+        keywords: tool.keywords.join(', '),
         applicationCategory: 'UtilitiesApplication',
         operatingSystem: 'All',
         offers: {

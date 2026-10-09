@@ -27,6 +27,18 @@ import { QrCodeGenerator } from './qr-code-generator';
 import { BarcodeGenerator } from './barcode-generator';
 import { SecurePasswordGenerator } from './secure-password-generator';
 import { CryptographicHashGenerator } from './cryptographic-hash-generator';
+import { WeeksIntoTheYear } from './weeks-into-the-year';
+import { RandomNumberGenerator } from './random-number-generator';
+import { TimeDifferenceConverter } from './time-difference-converter';
+import { ZodiacSignCalculator } from './zodiac-sign-calculator';
+import { VerticalToHorizontalImageConverter } from './vertical-to-horizontal-image-converter';
+import { EstToPstConverter } from './est-to-pst-converter';
+import { AnalogueClock } from './analogue-clock';
+import { WordCharacterCounter } from './word-character-counter';
+import { DaysBetweenDatesCalculator } from './days-between-dates-calculator';
+import { BmiCalculator } from './bmi-calculator';
+import { OnlineTimerStopwatch } from './online-timer-stopwatch';
+import { WheelSpinnerNamePicker } from './wheel-spinner-name-picker';
 
 export const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'resume-builder': ResumeBuilder,
@@ -55,6 +67,18 @@ export const TOOL_COMPONENTS: Record<string, React.ComponentType> = {
   'barcode-generator': BarcodeGenerator,
   'secure-password-generator': SecurePasswordGenerator,
   'cryptographic-hash-generator': CryptographicHashGenerator,
+  'how-many-weeks-into-the-year': WeeksIntoTheYear,
+  'random-number-generator': RandomNumberGenerator,
+  'time-difference-converter': TimeDifferenceConverter,
+  'zodiac-sign-calculator': ZodiacSignCalculator,
+  'vertical-to-horizontal-image-converter': VerticalToHorizontalImageConverter,
+  'est-to-pst-converter': EstToPstConverter,
+  'analogue-clock': AnalogueClock,
+  'word-character-counter': WordCharacterCounter,
+  'days-between-dates-calculator': DaysBetweenDatesCalculator,
+  'bmi-calculator': BmiCalculator,
+  'online-timer-stopwatch': OnlineTimerStopwatch,
+  'wheel-spinner-name-picker': WheelSpinnerNamePicker,
 };
 
 export function ToolRenderer({ slug }: { slug: string }) {

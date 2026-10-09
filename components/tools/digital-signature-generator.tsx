@@ -178,7 +178,7 @@ export const DigitalSignatureGenerator: React.FC = () => {
       ctx.font = '10px -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif';
       ctx.textAlign = 'center';
       ctx.fillText(
-        `Digitally Generated & Verified via DigitalTools · Date: ${today} · ${signerTitle}`,
+        `Digitally Generated & Verified via DigitalToools · Date: ${today} · ${signerTitle}`,
         exportWidth / 2,
         exportHeight - 20
       );
@@ -532,7 +532,7 @@ export const DigitalSignatureGenerator: React.FC = () => {
             {/* Date Stamp Preview */}
             {includeDateStamp && (
               <div className="text-[11px] text-slate-400 font-mono text-center pt-2 border-t border-slate-200 dark:border-slate-800 w-full">
-                Digitally Generated & Verified via DigitalTools · Date: {new Date().toLocaleDateString()} · {signerTitle}
+                Digitally Generated & Verified via DigitalToools · Date: {new Date().toLocaleDateString()} · {signerTitle}
               </div>
             )}
           </div>

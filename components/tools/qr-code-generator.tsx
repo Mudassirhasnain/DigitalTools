@@ -28,8 +28,8 @@ export const QrCodeGenerator: React.FC = () => {
   >('url');
 
   // Input states
-  const [url, setUrl] = useState('https://digitaltools.dev');
-  const [text, setText] = useState('DigitalTools: Fast, Private Web Utilities');
+  const [url, setUrl] = useState('https://digitaltoools.vercel.app');
+  const [text, setText] = useState('DigitalToools: Fast, Private Web Utilities');
 
   // WiFi states
   const [ssid, setSsid] = useState('My-Office-WiFi');
@@ -46,17 +46,17 @@ export const QrCodeGenerator: React.FC = () => {
   const [vcardWebsite, setVcardWebsite] = useState('https://example.com');
 
   // Email states
-  const [emailTo, setEmailTo] = useState('support@digitaltools.dev');
+  const [emailTo, setEmailTo] = useState('support@digitaltoools.dev');
   const [emailSubject, setEmailSubject] = useState('Inquiry regarding tools');
   const [emailBody, setEmailBody] = useState('Hello,\n\nI would like to inquire about...');
 
   // SMS states
   const [smsPhone, setSmsPhone] = useState('+15550198');
-  const [smsMessage, setSmsMessage] = useState('Hey! Check out this awesome toolkit: https://digitaltools.dev');
+  const [smsMessage, setSmsMessage] = useState('Hey! Check out this awesome toolkit: https://digitaltoools.vercel.app');
 
   // WhatsApp states
   const [waPhone, setWaPhone] = useState('15551234567');
-  const [waMessage, setWaMessage] = useState('Hi! I found your contact on DigitalTools.');
+  const [waMessage, setWaMessage] = useState('Hi! I found your contact on DigitalToools.');
 
   // Crypto states
   const [cryptoType, setCryptoType] = useState<'bitcoin' | 'ethereum' | 'solana'>('bitcoin');
@@ -85,7 +85,7 @@ export const QrCodeGenerator: React.FC = () => {
   const getPayloadString = (): string => {
     switch (qrType) {
       case 'url':
-        return url.trim() || 'https://digitaltools.dev';
+        return url.trim() || 'https://digitaltoools.vercel.app';
       case 'text':
         return text.trim() || 'Hello World';
       case 'wifi':
@@ -124,7 +124,7 @@ export const QrCodeGenerator: React.FC = () => {
       case 'geo':
         return `geo:${geoLat},${geoLng}`;
       default:
-        return 'https://digitaltools.dev';
+        return 'https://digitaltoools.vercel.app';
     }
   };
 

@@ -33,6 +33,18 @@ const ALIAS_MAP: Record<string, string[]> = {
   'barcode-generator': ['barcode', 'code128', 'ean13', 'upc', 'isbn', 'scanner'],
   'secure-password-generator': ['password', 'passcode', 'pin', 'random', 'security', 'crypto', 'generator', 'passphrase'],
   'cryptographic-hash-generator': ['hash', 'sha256', 'md5', 'sha512', 'hmac', 'checksum', 'digest', 'crypto'],
+  'how-many-weeks-into-the-year': ['week', 'weeks', 'week number', 'iso week', 'calendar', 'year', 'day of year'],
+  'random-number-generator': ['random', 'number', 'dice', 'lottery', 'picker', 'raffle', 'draw'],
+  'time-difference-converter': ['time zone', 'timezone', 'time difference', 'world clock', 'hours', 'gmt', 'utc'],
+  'zodiac-sign-calculator': ['zodiac', 'star sign', 'horoscope', 'birthday', 'astrology', 'aries', 'leo'],
+  'vertical-to-horizontal-image-converter': ['vertical', 'horizontal', 'portrait', 'landscape', 'orientation', 'rotate', 'blur background', '16:9'],
+  'est-to-pst-converter': ['est', 'pst', 'edt', 'pdt', 'eastern', 'pacific', 'time zone'],
+  'analogue-clock': ['clock', 'analog', 'analogue', 'time', 'watch', 'learn time', 'classroom'],
+  'word-character-counter': ['word count', 'characters', 'letters', 'sentences', 'reading time', 'keyword density', 'essay'],
+  'days-between-dates-calculator': ['date', 'days', 'countdown', 'business days', 'working days', 'add days', 'date difference'],
+  'bmi-calculator': ['bmi', 'body mass', 'weight', 'height', 'health', 'ideal weight', 'calories'],
+  'online-timer-stopwatch': ['timer', 'stopwatch', 'countdown', 'alarm', 'pomodoro', 'laps', 'focus'],
+  'wheel-spinner-name-picker': ['wheel', 'spin', 'random name', 'picker', 'raffle', 'giveaway', 'teams', 'draw'],
 };
 
 /**

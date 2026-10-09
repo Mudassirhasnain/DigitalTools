@@ -36,6 +36,18 @@ import {
   Barcode,
   Key,
   Hash,
+  CalendarDays,
+  Dices,
+  Hourglass,
+  Star,
+  RectangleHorizontal,
+  ArrowRightLeft,
+  AlarmClock,
+  Type,
+  CalendarRange,
+  Activity,
+  Timer,
+  Disc3,
 } from 'lucide-react';
 
 const TOOL_ICONS: Record<string, React.ReactNode> = {
@@ -65,6 +77,18 @@ const TOOL_ICONS: Record<string, React.ReactNode> = {
   'barcode-generator': <Barcode className="w-5 h-5 text-sky-500" />,
   'secure-password-generator': <Key className="w-5 h-5 text-amber-500" />,
   'cryptographic-hash-generator': <Hash className="w-5 h-5 text-rose-500" />,
+  'how-many-weeks-into-the-year': <CalendarDays className="w-5 h-5 text-sky-500" />,
+  'random-number-generator': <Dices className="w-5 h-5 text-fuchsia-500" />,
+  'time-difference-converter': <Hourglass className="w-5 h-5 text-teal-500" />,
+  'zodiac-sign-calculator': <Star className="w-5 h-5 text-violet-500" />,
+  'vertical-to-horizontal-image-converter': <RectangleHorizontal className="w-5 h-5 text-pink-500" />,
+  'est-to-pst-converter': <ArrowRightLeft className="w-5 h-5 text-blue-500" />,
+  'analogue-clock': <AlarmClock className="w-5 h-5 text-rose-500" />,
+  'word-character-counter': <Type className="w-5 h-5 text-teal-500" />,
+  'days-between-dates-calculator': <CalendarRange className="w-5 h-5 text-indigo-500" />,
+  'bmi-calculator': <Activity className="w-5 h-5 text-emerald-500" />,
+  'online-timer-stopwatch': <Timer className="w-5 h-5 text-orange-500" />,
+  'wheel-spinner-name-picker': <Disc3 className="w-5 h-5 text-pink-500" />,
 };
 
 const POPULAR_QUERIES = [
@@ -78,6 +102,10 @@ const POPULAR_QUERIES = [
   'JSON Formatter',
   'Signature',
   'WPM Test',
+  'Word Counter',
+  'Timer',
+  'BMI',
+  'Wheel Spinner',
 ];
 
 interface ToolSearchGridProps {
@@ -93,7 +121,7 @@ export const ToolSearchGrid: React.FC<ToolSearchGridProps> = ({
   categories,
   initialCategory = 'all',
   lockCategory = false,
-  searchPlaceholder = 'Search all 26 tools by name, keyword, or acronym (e.g., pdf, emi, exif, qr)...',
+  searchPlaceholder = 'Search all 38 tools by name, keyword, or acronym (e.g., pdf, emi, exif, qr)...',
 }) => {
   const [query, setQuery] = useState('');
   const [selectedCategory, setSelectedCategory] = useState(initialCategory);

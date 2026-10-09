@@ -27,7 +27,7 @@ import {
 
 export const TextManipulationSuite: React.FC = () => {
   const [text, setText] = useState(
-    'The quick brown fox jumps over the lazy dog.\nSoftware engineering requires disciplined attention to detail.\nContact us at dev-team@digitaltools.dev or visit https://digitaltools.dev for production utilities.\nThe quick brown fox jumps over the lazy dog.'
+    'The quick brown fox jumps over the lazy dog.\nSoftware engineering requires disciplined attention to detail.\nContact us at dev-team@digitaltoools.dev or visit https://digitaltoools.vercel.app for production utilities.\nThe quick brown fox jumps over the lazy dog.'
   );
 
   const [activeTab, setActiveTab] = useState<'case' | 'clean' | 'find' | 'encode' | 'extract' | 'stats'>('case');
@@ -393,7 +393,7 @@ export const TextManipulationSuite: React.FC = () => {
             type="button"
             onClick={() =>
               setText(
-                'The quick brown fox jumps over the lazy dog.\nSoftware engineering requires disciplined attention to detail.\nContact us at dev-team@digitaltools.dev or visit https://digitaltools.dev for production utilities.'
+                'The quick brown fox jumps over the lazy dog.\nSoftware engineering requires disciplined attention to detail.\nContact us at dev-team@digitaltoools.dev or visit https://digitaltoools.dev for production utilities.'
               )
             }
             className="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
