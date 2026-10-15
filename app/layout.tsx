@@ -61,7 +61,7 @@ export const metadata: Metadata = {
       'Free, privacy-focused online tools for developers, creators, and professionals. 100% client-side processing wherever possible.',
     images: [
       {
-        url: 'https://digitaltoools.vercel.app/og-default.png',
+        url: '/og-default.png',
         width: 1200,
         height: 630,
         alt: 'DigitalToools - 38 Free, Fast & Private Online Utilities',
