@@ -61,7 +61,7 @@ export const metadata: Metadata = {
       'Free, privacy-focused online tools for developers, creators, and professionals. 100% client-side processing wherever possible.',
     images: [
       {
-        url: '/og-default.webp',
+        url: '/og-default.png',
         width: 1200,
         height: 630,
         alt: 'DigitalToools - 38 Free, Fast & Private Online Utilities',
@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: 'DigitalToools: 38 Free, Fast & Private Online Utilities',
     description:
       'Free, privacy-first online tools for developers and creators. No tracking, zero paywalls, instant browser compute.',
-    images: ['/og-default.webp'],
+    images: ['/og-default.png'],
   },
   icons: {
     icon: '/icon.png',
