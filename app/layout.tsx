@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     images: ['/og-default.png'],
   },
   icons: {
-    icon: '/favicon.png',
+    icon: '/favicon-32x32.png',
     apple: '/apple-icon.png',
   },
 };
