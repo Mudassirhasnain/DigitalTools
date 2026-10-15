@@ -73,7 +73,7 @@ export const metadata: Metadata = {
     title: 'DigitalToools: 38 Free, Fast & Private Online Utilities',
     description:
       'Free, privacy-first online tools for developers and creators. No tracking, zero paywalls, instant browser compute.',
-    images: ['https://digitaltoools.vercel.app/og-default.png'],
+    images: ['/og-default.png'],
   },
   icons: {
     icon: '/icon.png',
