@@ -70,7 +70,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DigitalToools: 38 Free, Fast & Private Online Utilities',
+    site: '@DigitalToools',
+    title: 'DigitalToools: Free, Fast & Private Online Utilities',
     description:
       'Free, privacy-first online tools for developers and creators. No tracking, zero paywalls, instant browser compute.',
     images: ['/og-default.png'],
