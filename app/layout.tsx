@@ -77,7 +77,7 @@ export const metadata: Metadata = {
     images: ['/og-default.png'],
   },
   icons: {
-    icon: 'https://digitaltoools.vercel.app/icon.png', 
+    icon: '', 
     apple: '/apple-icon.png',
   },
 };
