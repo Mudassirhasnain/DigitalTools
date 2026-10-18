@@ -3,6 +3,17 @@ export interface ToolFaq {
   answer: string;
 }
 
+export interface ToolSection {
+  heading: string;
+  paragraphs: string[];
+  table?: {
+    headers: string[];
+    rows: string[][];
+  };
+  /** Optional paragraphs rendered after the table. */
+  afterTable?: string[];
+}
+
 export interface ToolDefinition {
   slug: string;
   name: string;
@@ -22,6 +33,8 @@ export interface ToolDefinition {
     heading: string;
     paragraphs: string[];
   };
+  /** Extra H2 sections rendered after detailedGuide, in order. */
+  sections?: ToolSection[];
 }
 
 export type Tool = ToolDefinition;
@@ -1746,8 +1759,8 @@ export const TOOLS: ToolDefinition[] = [
     ],
     seoTitle: 'EST to PST Converter: Eastern to Pacific Time Online',
     metaDescription: 'Convert EST to PST and Eastern to Pacific time instantly. Works both ways, handles daylight saving (EDT and PDT), and includes a full 24 hour conversion chart.',
-    h1: 'EST to PST Converter: Eastern to Pacific Time',
-    intro: 'Convert any Eastern Time to Pacific Time, or the other way around, in one step. The converter applies daylight saving automatically, labels the result as PST or PDT, tells you when the answer falls on a different day, and includes a full 24 hour chart.',
+    h1: 'EST to PST Time Converter',
+    intro: 'Use the EST to PST Time converter to turn Eastern local time into Pacific time in seconds. Select the date and enter the EST time, then review the converted time, date, and day on the page. Because EST and PST are standard-time labels, the result may show EDT or PDT during daylight saving time. The converter handles date changes automatically, so you can confirm the correct local time before scheduling.',
     howToSteps: [
       'Choose the direction, Eastern to Pacific or Pacific to Eastern, and press Swap whenever you want to reverse it.',
       'Enter the date and the time you want to convert, or press Current time to start from now.',
@@ -1755,32 +1768,88 @@ export const TOOLS: ToolDefinition[] = [
     ],
     faqs: [
       {
-        question: 'What is the time difference between EST and PST?',
-        answer: 'Pacific Time is 3 hours behind Eastern Time. When it is 12:00 PM in New York, it is 9:00 AM in Los Angeles. Standard time (EST and PST) and daylight time (EDT and PDT) keep the same 3 hour gap.',
+        question: 'How many hours ahead is EST compared with PST?',
+        answer: 'EST is three hours ahead of PST, so PST is three hours behind. For example, 10 AM EST becomes 7 AM PST. The exact difference can depend on the selected location and date.',
       },
       {
-        question: 'How do I convert EST to PST?',
-        answer: 'Subtract 3 hours from the Eastern time. For example, 5:00 PM EST is 2:00 PM PST, and 1:00 AM EST is 10:00 PM PST on the previous day. This converter does the subtraction and the day change for you.',
+        question: 'Does daylight saving change the EST PST gap?',
+        answer: 'Daylight saving time changes the labels and UTC offsets. EDT and PDT generally keep the same three-hour difference when both locations follow matching daylight saving rules, but local rules can vary. Eastern Standard Time and Pacific Standard Time apply during standard time.',
       },
       {
-        question: 'What is the difference between EST and EDT?',
-        answer: 'EST is Eastern Standard Time, which is UTC-5 and used in winter. EDT is Eastern Daylight Time, which is UTC-4 and used in summer. The Pacific equivalents are PST at UTC-8 and PDT at UTC-7. Many people say EST or PST all year when they mean the current local time, and the tool labels the correct abbreviation for your date.',
+        question: 'How do I convert PST to EST?',
+        answer: 'Add three hours when the relevant zones have a three-hour difference. For example, 8 AM PST becomes 11 AM EST. Use the date-aware converter to confirm the correct local time, daylight or standard-time label, and date.',
       },
       {
-        question: 'Is the gap always exactly 3 hours?',
-        answer: 'Almost always. Both zones change their clocks on the same dates, but at 2:00 AM local time, which are three hours apart. For a few hours on the two daylight saving change days, the gap briefly becomes 4 hours in spring and 2 hours in autumn. The tool calculates this correctly for the date and time you enter.',
+        question: 'Why does the result show the previous day?',
+        answer: 'An early Eastern time can fall on the previous day in the Pacific zone. Check the converted time, date, day, and displayed abbreviation before scheduling.',
+      },
+      {
+        question: 'Can I convert another time zone?',
+        answer: 'Yes. Use a time zone tool that supports more zones, including half-hour offsets. Check the final result on this page before confirming a meeting or sending an invitation.',
       },
     ],
     relatedSlugs: ['time-difference-converter', 'analogue-clock', 'unix-timestamp-converter'],
     processingNote: 'Client-side processing: Conversions use the time zone data built into your browser. No times or dates are sent to a server.',
     detailedGuide: {
-      heading: 'Converting Eastern Time to Pacific Time Correctly',
+      heading: 'How to Convert EST to PST',
       paragraphs: [
-        'Eastern Time covers cities such as New York, Washington, Toronto, and Miami, while Pacific Time covers Los Angeles, San Francisco, Seattle, and Vancouver. The two zones are three hours apart, so a nine o\'clock meeting in New York starts at six in the morning in Los Angeles. Because so many companies, streamers, and event organizers announce times in Eastern time, converting it to Pacific time is one of the most common time zone tasks on the internet.',
-        'The abbreviations are a frequent source of confusion. EST means Eastern Standard Time and applies only in winter, while EDT means Eastern Daylight Time and applies in summer. In everyday speech, many people write EST or PST even in the summer months when they really mean the local time in Eastern or Pacific regions. This converter treats your input as local time in New York or Los Angeles and labels the answer with the abbreviation that is actually in effect on your date.',
-        'The full day chart below the result lists all 24 hours of the selected date so that you can plan around the day boundary. Late evening hours in Eastern time convert to earlier hours on the same date in Pacific time, and early morning hours in Eastern time convert to the evening of the previous day. When you need a different pair of locations, the Time Difference Converter supports dozens of cities and handles half hour offsets as well.',
+        'The Eastern and Pacific time zones include cities such as New York, Washington, Toronto, Miami, Los Angeles, San Francisco, Seattle, and Vancouver. Under standard time, EST is UTC-5 and PST is UTC-8, creating a three-hour time difference. However, local rules and the selected date determine the applicable zone abbreviation.',
+        'To convert EST to PST when both locations follow matching seasonal rules, subtract three hours; to reverse the conversion, add three hours. For example, 9 AM EST becomes 6 AM PST, while 12 PM EST becomes 9 AM PST. Subtracting three hours from 1 AM in New York produces 10 PM on the previous date in Los Angeles. Use a reliable converter EST to PST tool to check the correct local time, avoid manual conversion errors, and send accurate calendar invitations for a meeting or working call.',
       ],
     },
+    sections: [
+      {
+        heading: 'EST vs EDT vs PST vs PDT',
+        paragraphs: [
+          'EST and PST refer to standard time, while EDT and PDT refer to daylight time during daylight saving time. These abbreviations are not interchangeable: each time zone can switch between standard and daylight labels during the year, according to local rules. Not every region associated with the Eastern or Pacific time zones observes daylight saving in the same way.',
+        ],
+        table: {
+          headers: ['Abbreviation', 'Meaning', 'UTC Offset'],
+          rows: [
+            ['EST', 'Eastern Standard Time', 'UTC-5'],
+            ['EDT', 'Eastern Daylight Time', 'UTC-4'],
+            ['PST', 'Pacific Standard Time', 'UTC-8'],
+            ['PDT', 'Pacific Daylight Time', 'UTC-7'],
+          ],
+        },
+        afterTable: [
+          'Do not rely on an abbreviation alone. The time zone converter uses the selected date and location to show the correct label. Check the PST time, including the PST time on the result and the PST time for the destination, before confirming a schedule.',
+        ],
+      },
+      {
+        heading: 'Eastern to Pacific Time Difference',
+        paragraphs: [
+          'Eastern time is usually three hours ahead of Pacific time when both locations follow matching seasonal clock changes. For example, a 2 PM meeting in New York starts at 11 AM in Los Angeles. This EST PST difference generally remains three hours when the labels change, but local daylight-saving rules can affect the actual difference.',
+          'Use this EST to PST conversion table as a quick reference for standard time:',
+        ],
+        table: {
+          headers: ['EST', 'PST'],
+          rows: [
+            ['6 AM', '3 AM'],
+            ['9 AM', '6 AM'],
+            ['12 PM', '9 AM'],
+            ['3 PM', '12 PM'],
+            ['6 PM', '3 PM'],
+            ['9 PM', '6 PM'],
+            ['11 PM', '8 PM'],
+          ],
+        },
+      },
+      {
+        heading: 'Daylight Saving and Date Changes',
+        paragraphs: [
+          'Daylight saving time moves clocks forward one hour in spring and back one hour in autumn, although transition dates and rules vary by location. During daylight saving, EDT and PDT replace Eastern Standard Time and Pacific Standard Time (EST and PST). In the United States, daylight saving time ends on November 1, 2026. Check the applicable time zone and local rules for the selected year before starting an EST PST conversion.',
+          'A date change is easy to miss. For example, subtracting three hours from 1 AM Tuesday in New York gives 10 PM Monday in Los Angeles when both locations have the expected three-hour difference. Always check the converted time, date, and day, not only the hours. During the autumn transition, a repeated or ambiguous local time may require confirmation of the correct daylight or standard time label.',
+        ],
+      },
+      {
+        heading: 'Using the 24-Hour Chart',
+        paragraphs: [
+          'The 24-hour chart shows each conversion for your selected day. Read across the chart to compare Eastern and Pacific local time, identify the EST PST overlap in working hours, and choose a suitable time for each location pair.',
+          'As a general example, 12 PM to 5 PM EST corresponds to 9 AM to 2 PM PST. This is a practical scheduling window, not a rule for every team. Check each location’s working hours, holidays, daylight saving rules, and the recipient’s date for the selected year. Use the converter on this page to confirm the result before sending a meeting invite.',
+        ],
+      },
+    ],
   },
   {
     slug: 'analogue-clock',
