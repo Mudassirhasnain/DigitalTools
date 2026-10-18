@@ -3,12 +3,21 @@ import Link from 'next/link';
 import { ToolDefinition, getToolBySlug } from '@/lib/tools';
 import { ChevronRight, Shield, Info, CheckCircle2, ArrowRight } from 'lucide-react';
 
+interface ExtraSection {
+  heading: string;
+  paragraphs: string[];
+  table?: { headers: string[]; rows: string[][] };
+  afterTable?: string[];
+}
+
 export interface ToolLayoutProps {
   tool: ToolDefinition;
   children: React.ReactNode;
 }
 
 export const ToolLayout: React.FC<ToolLayoutProps> = ({ tool, children }) => {
+  const extraSections =
+    (tool as ToolDefinition & { sections?: ExtraSection[] }).sections ?? [];
   const relatedTools = tool.relatedSlugs
     .map((slug) => getToolBySlug(slug))
     .filter((t): t is ToolDefinition => !!t);
@@ -103,6 +112,58 @@ export const ToolLayout: React.FC<ToolLayoutProps> = ({ tool, children }) => {
           ))}
         </div>
       </section>
+
+      {/* Optional extra H2 sections (headings, paragraphs, tables) */}
+      {extraSections.map((section) => (
+        <section
+          key={section.heading}
+          className="mb-14 pt-8 border-t border-slate-200 dark:border-slate-800"
+        >
+          <h2 className="text-xl sm:text-2xl font-bold tracking-tight text-slate-900 dark:text-white mb-4">
+            {section.heading}
+          </h2>
+          <div className="max-w-none text-sm sm:text-base leading-relaxed text-slate-600 dark:text-slate-300 space-y-4">
+            {section.paragraphs.map((p, idx) => (
+              <p key={idx}>{p}</p>
+            ))}
+            {section.table && (
+              <div className="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-800">
+                <table className="w-full text-left text-sm">
+                  <thead className="bg-slate-50 dark:bg-slate-900/60">
+                    <tr>
+                      {section.table.headers.map((h) => (
+                        <th
+                          key={h}
+                          className="px-4 py-3 font-semibold text-slate-900 dark:text-white"
+                        >
+                          {h}
+                        </th>
+                      ))}
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {section.table.rows.map((row, rIdx) => (
+                      <tr
+                        key={rIdx}
+                        className="border-t border-slate-200 dark:border-slate-800"
+                      >
+                        {row.map((cell, cIdx) => (
+                          <td key={cIdx} className="px-4 py-2.5">
+                            {cell}
+                          </td>
+                        ))}
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            )}
+            {section.afterTable?.map((p, idx) => (
+              <p key={`after-${idx}`}>{p}</p>
+            ))}
+          </div>
+        </section>
+      ))}
 
       {/* Frequently Asked Questions Section (FAQPage schema source) */}
       <section className="mb-14 pt-8 border-t border-slate-200 dark:border-slate-800">
