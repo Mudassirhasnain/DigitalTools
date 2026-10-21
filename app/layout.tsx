@@ -5,6 +5,7 @@ import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { Analytics } from "@vercel/analytics/next"
 import { TOOLS } from '@/lib/tools';
+import Script from 'next/script';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -73,7 +74,7 @@ export const metadata: Metadata = {
     site: '@DigitalToools',
     title: 'DigitalToools: Free, Fast & Private Online Utilities',
     description:
-      'Free, privacy-first online tools for developers and creators. No tracking, zero paywalls, instant browser compute.',
+      'Free, privacy-first online tools for developers and creators. No SignUp, instant browser compute.',
     images: ['/og-default.png'],
   },
   icons: {
@@ -102,6 +103,11 @@ export default function RootLayout({
         <main className="flex-1 w-full">{children}</main>
         <Footer />
         <Analytics />
+        <Script
+      src="https://analytics.ahrefs.com/analytics.js"
+      data-key="THUpGdSMGJ8eSe5ZvD6vBw"
+      strategy="beforeInteractive"
+    />
       </body>
     </html>
   );
